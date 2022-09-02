@@ -15,10 +15,9 @@ jobs:
         shell: bash
         run: |
           pwd
-          cd $GITHUB_WORKSPACE
-          pwd
           wget https://www2.census.gov/geo/tiger/TIGER2021/COUNTY/tl_2021_us_county.zip
           unzip -j tl_2021_us_county.zip
+          ls -al
       - uses: adrn-blog/execute-post@main
         with:
           python-version: "3.10"
