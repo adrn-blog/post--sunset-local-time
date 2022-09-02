@@ -1,4 +1,4 @@
-# When is sunset?
+# When is Sunset?
 
 See the published version of this post at: https://adrian.pw/blog/sunset-times
 
