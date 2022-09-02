@@ -11,6 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     concurrency: post-${{ github.ref }}
     steps:
+      - name: Get county data
+        shell: bash
+        run: |
+          wget https://www2.census.gov/geo/tiger/TIGER2021/COUNTY/tl_2021_us_county.zip
+          unzip tl_2021_us_county.zip
+          mv tl_2021_us_county/* .
       - uses: adrn-blog/execute-post@main
         with:
           python-version: "3.10"
