@@ -1,0 +1,14 @@
+notebook
+jupyter
+ipykernel
+nbconvert
+numpy
+scipy
+matplotlib
+timezonefinder
+basemap
+basemap-data
+pyproj
+pandas
+pytz
+astropy
